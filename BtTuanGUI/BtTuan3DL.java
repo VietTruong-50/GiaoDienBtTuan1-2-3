@@ -111,7 +111,7 @@ public class BtTuan3DL extends JDialog implements ActionListener {
 		panel.setBorder(new TitledBorder(
 				new EtchedBorder(EtchedBorder.LOWERED, new Color(255, 255, 255), new Color(160, 160, 160)), "S\u1ED1",
 				TitledBorder.RIGHT, TitledBorder.BELOW_BOTTOM, null, new Color(0, 0, 0)));
-		panel.setBounds(665, 94, 81, 50);
+		panel.setBounds(665, 95, 81, 50);
 		contentPanel.add(panel);
 		panel.setLayout(null);
 
@@ -222,6 +222,10 @@ public class BtTuan3DL extends JDialog implements ActionListener {
 		JLabel lblNewLabel_13 = new JLabel(" { 5, 2, 8, 3, 9, 12, 17, 22, 95, 11 }");
 		lblNewLabel_13.setBounds(696, 203, 178, 14);
 		contentPanel.add(lblNewLabel_13);
+		
+		JLabel lblNewLabel_14 = new JLabel("<HTML>{5,2,8,3,9,12,<br>17,22,95}<HTML>\r\n");
+		lblNewLabel_14.setBounds(766, 95, 81, 42);
+		contentPanel.add(lblNewLabel_14);
 		
 	}
 

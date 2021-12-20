@@ -138,8 +138,13 @@ public class BtT3DLsub extends JDialog {
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				int[][] a =new int[50][50];
-				int x = (int) spinner.getValue();
-				bai13Ta.setText(BaiTap13.inkq(a , x));
+				if(x<3){
+					JOptionPane.showMessageDialog(null, "x phải lớn hơn hoặc bằng 3");
+				}else if(x>8) {
+					JOptionPane.showMessageDialog(null, "x phải nhỏ hơn hoặc bằng 8");
+				}else {
+					bai13Ta.setText(BaiTap13.inkq(a , x));
+				}
 			}
 		});
 		btnNewButton.setBounds(539, 184, 89, 23);
